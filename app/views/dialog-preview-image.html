@@ -1,0 +1,27 @@
+<md-dialog class="enable-animate">
+    <ul class="menu-bar flip-controls" ng-show="image.ready">
+        <li>
+            <a href ng-click="rotateImage(-90)"><span>Left</span></a>
+        </li>
+        <li>
+            <a href ng-click="rotateImage(90)"><span>Right</span></a>
+        </li>
+    </ul>
+    <div class="bg-contain enable-animate image-preview-container" style="
+        -webkit-transform: rotate({{rotation}}deg);
+        -moz-transform: rotate({{rotation}}deg);
+        -o-transform: rotate({{rotation}}deg);
+        -ms-transform: rotate({{rotation}}deg);
+        transform: rotate({{rotation}}deg);
+        background-image: url({{thumb.src || ''}});
+        width: {{image.width|| thumb.width}}px;
+        height: {{image.height || thumb.height}}px;
+        "
+        >
+        <!--<img id="thumbObj" ng-show="thumb.ready && !image.ready" class="" src="{{thumb.src}}"/>-->
+        <img id="imageObj" ng-show="image.ready" class="enable-animate" src="{{image.src}}"/>
+        <span us-spinner="{radius:30, width:8, length: 16}" spinner-on="!image.ready"></span>
+
+    </div>
+    <a ng-click="close()" role="button" class="close-button">×</a>
+</md-dialog>

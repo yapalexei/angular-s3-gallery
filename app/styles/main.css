@@ -1,0 +1,88 @@
+.my-top-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.image-thumbs-list {
+    padding-top: 60px;
+}
+
+.bg-contain {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.afkl-lazy-image-loading {
+    background-color: #ddd;
+    /*min-height: 150px;*/
+}
+
+.enable-animate {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.size-hack {
+    width: 100%;
+    height: 100%;
+}
+
+md-dialog {
+    display: table;
+}
+
+.md-dialog-container {
+    /*height: 90vh;*/
+}
+
+.md-dialog-container .image-preview-container * {
+    /*position: absolute;*/
+    /*display: block;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+.image-preview-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+
+
+.rotate-right {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rotate-left {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.flip {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.flip-controls {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}

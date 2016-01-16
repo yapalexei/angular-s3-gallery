@@ -1,0 +1,7 @@
+<div class="hingeInFromLeft button-group my-bucket-image grid-block align-spaced" ng-repeat="image in Main.imageList track by $index">
+    <a class="" ng-click="Main.showFullImage($index, $event)" href>
+        <div afkl-lazy-image="{{Main.getThumb(image.Key)}}" afkl-lazy-image-options="{className: 'thumbnail'}">
+            <span us-spinner="{radius:30, width:8, length: 16}" spinner-on="showSpinner"></span>
+        </div>
+    </a>
+</div>
