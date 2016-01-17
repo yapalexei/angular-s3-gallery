@@ -38,7 +38,10 @@ The code above is the client side of my rant. The lambda function repo link will
 
 ### For Previewing
 
+Be sure to run `npm install` and `bower install` first.
+
 Run `grunt` for building and `grunt serve` for preview.
+
 **Note:** This will not work by simply installing on your setup one must change the buckets to point to your own that also have
 an appropriate CORS and bucket policy configured on them. 
 
