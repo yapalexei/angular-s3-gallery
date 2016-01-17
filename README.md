@@ -40,7 +40,7 @@ The code above is the client side of my rant. The lambda function repo link will
 
 Run `grunt` for building and `grunt serve` for preview.
 **Note:** This will not work by simply installing on your setup one must change the buckets to point to your own that also have
-an appropriate bucket policy configured on them. 
+an appropriate CORS and bucket policy configured on them. 
 
 #### The "Upload Bucket" policy would have to look something like (use the generator for this):
 ```
