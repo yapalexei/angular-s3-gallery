@@ -25,7 +25,7 @@ So to sum it up, there are three things that I need; a file storage area (S3), a
 that reads it all (Angularjs served on Nodejs/Expressjs). 
 
 ## Present Setup:
-The code above is the client side of my rant. The lambda function repo link will come soon with more details.
+The code above is the client side of my rant. The lambda function repo link is [here](https://github.com/yapalexei/lambda-image-sizer).
 
 ## Environment:
 
